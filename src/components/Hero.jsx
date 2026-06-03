@@ -138,7 +138,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Social Links */}
-        <motion.div variants={itemVariants} className="flex flex-col md:flex-row justify-center gap-2 md:gap-6">
+        <motion.div variants={itemVariants} className="flex  md:flex-row justify-center gap-2 md:gap-6">
           <motion.a
             href="https://github.com/M-Ahmad-ma"
             target="_blank"
