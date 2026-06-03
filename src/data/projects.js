@@ -159,46 +159,6 @@ Published as an npm package with global CLI installation, designed as a modern a
     }
   },
   {
-    id: 6,
-    name: 'Web Scraper',
-    shortName: 'Web Scraper',
-    description: 'Versatile web scraping application with Puppeteer, Cheerio, and Express server supporting media extraction, wallpaper scraping, and CAPTCHA detection.',
-    fullDescription: `A multi-engine web scraping platform supporting three scraping backends: basic regex/curl-based, Cheerio-based for static pages, and full Puppeteer-based for dynamic JavaScript-rendered content. Includes specialized scrapers for Wallhaven wallpapers and general media extraction.
-
-Features CAPTCHA detection across 10+ challenge providers (reCAPTCHA, hCaptcha, Cloudflare, Turnstile, etc.), video info extraction via yt-dlp, and an Express-based web UI with EJS templates and rate limiting.`,
-    tech: ['Node.js', 'Express', 'Puppeteer', 'Cheerio', 'EJS', 'yt-dlp', 'YAML'],
-    status: 'Completed',
-    github: null,
-    live: null,
-    livePreview: null,
-    features: [
-      'Three scraping engines: regex, Cheerio, Puppeteer',
-      'JavaScript-rendered page support with headless browser',
-      'Wallhaven wallpaper scraper (SFW, Sketchy, NSFW)',
-      'YouTube/Vimeo/Dailymotion video info and download via yt-dlp',
-      'CAPTCHA detection for reCAPTCHA, hCaptcha, Cloudflare, Turnstile, and more',
-      'Image, video, and audio media type detection',
-      'Stealth plugin for anti-bot evasion',
-      'Express web interface with EJS templates',
-      'Rate limiting middleware',
-      'Configurable scraping with YAML/JS options'
-    ],
-    architecture: {
-      overview: `Node.js application with Express 5 server, modular scraper classes (Scraper, WallhavenScraper, PuppeteerScraper), EJS template engine for web UI, Puppeteer with stealth plugin for JavaScript rendering, yt-dlp integration for video platforms.`,
-      layers: [
-        { name: 'Web Layer', items: ['Express 5 Server', 'EJS Views', 'Rate Limiter', 'Static Assets'] },
-        { name: 'Scraper Engines', items: ['Regex-based Parser', 'Cheerio Scraper', 'Puppeteer Scraper', 'WallhavenScraper'] },
-        { name: 'Detection', items: ['Media Type Detector', 'CAPTCHA Detector (10+ providers)', 'Video URL Matcher'] },
-        { name: 'Infrastructure', items: ['Node.js', 'Puppeteer/Chromium', 'yt-dlp', 'File System'] }
-      ],
-      dataFlow: `Web Request / CLI → Scraper Class → fetchHtml/scrapeWithPuppeteer → HTML Parse → Extracted Data → JSON/View Response`,
-      external: ['Puppeteer (Chromium)', 'yt-dlp', 'Wallhaven API']
-    },
-    database: {
-      relationships: 'File-based output (JSON), no persistent database'
-    }
-  },
-  {
     id: 7,
     name: 'Web Crawler',
     shortName: 'Web Crawler',
