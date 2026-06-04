@@ -45,7 +45,7 @@ export default function Contact() {
               <span className="text-tokyo-green">const</span> message = <span className="text-tokyo-string">"Let's build something together!"</span>;
             </p>
             <p className="text-tokyo-text text-sm md:text-base">
-              I'm currently available for backend developer opportunities.
+              I'm currently available for FullStack developer opportunities.
             </p>
           </div>
         </ScrollReveal>
